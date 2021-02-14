@@ -1,0 +1,58 @@
+.ListItem
+{
+    display: block;
+    margin:10px 0;
+    box-sizing: border-box;  
+    width:100%;
+    
+}
+.active
+{
+    border-bottom: 4px solid #40A4CB;
+}
+.ListItem a{
+    color:#8f5c2c;
+    text-decoration: none;
+    width:100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.ListItem a:hover,
+.ListItem a:active,
+.ListItem a.active {
+
+    color: #40A4CB;
+}
+@media(min-width:500px) /*we usually write mobile-responsive styles first and then using media-queries
+we adjust them to fit right on the desktop */
+{
+    .ListItem
+    {
+        display: flex;
+        margin:0;
+        width:auto;
+        flex-direction: row;   
+        height:100%;
+        align-items: center;
+    }
+    .ListItem a{
+        width:auto;
+        color:white;
+        text-decoration: none;
+        height:100%;
+        padding:16px 10px; /*top-bottom 16px left-right 10px*/
+        align-items: center;
+        border-bottom: 4px solid transparent;
+    }
+    
+    .ListItem a:hover,
+    .ListItem a:active,
+    .ListItem a.active {
+    
+        color:white;
+        border-bottom: 4px solid #40A4CB;
+         background-color:#8f5c2c;  
+    }
+
+}

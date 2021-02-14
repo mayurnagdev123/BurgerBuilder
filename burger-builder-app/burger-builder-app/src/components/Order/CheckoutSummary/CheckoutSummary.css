@@ -1,0 +1,16 @@
+.checkoutSummary{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans', 'sans serif';
+    /* width:80%; */
+    /* background-color: coral; */
+    margin:auto;
+    padding:20px;
+}
+@media screen and (min-width:600px)
+{
+    .checkoutSummary{
+        width: 600px;
+        margin : auto;
+    }
+}
